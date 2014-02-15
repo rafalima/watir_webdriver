@@ -22,34 +22,34 @@ root/
 		step_definitions/
 			<feature_name>_steps.rb
 
-	support/
-		env.rb
+		support/
+			env.rb
 
-			$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '../../', 'lib'))
+				$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '../../', 'lib'))
 
-			require 'rubygems'
-			require 'cucumber'
-			require 'rspec-expectations'
-			require 'page-object'
-			require 'require_all'
+				require 'rubygems'
+				require 'cucumber'
+				require 'rspec-expectations'
+				require 'page-object'
+				require 'require_all'
 
-			require_all 'lib'
+				require_all 'lib'
 
-			World(PageObject::PageFactory)
+				World(PageObject::PageFactory)
 
 
 
-		hooks.rb
+			hooks.rb	
 
-			require 'watir-webdriver'
+				require 'watir-webdriver'
 
-			Before do
-			  @browser = Watir::Browser.new :firefox
-			end
+				Before do
+			  		@browser = Watir::Browser.new :firefox
+				end
 
-			After do
-			  @browser.close
-			end
+				After do
+			  		@browser.close
+				end
 
 		
 
