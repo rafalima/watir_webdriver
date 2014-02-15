@@ -4,8 +4,9 @@ root/
 			source 'https://rubygems.org'
 
 			gem 'cucumber'
-			gem 'rspec'
 			gem 'page-object'
+			gem 'rspec'
+			gem 'require_all'
 
 	cucumber.yml
 		default: --no-source --color --format pretty
@@ -26,6 +27,8 @@ features/
 
 				$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '../../', 'lib'))
 
+				require 'rubygems'
+				require 'cucumber'
 				require 'rspec-expectations'
 				require 'page-object'
 				require 'require_all'
