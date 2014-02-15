@@ -6,14 +6,24 @@ class HomePage
 	paragraph(:front_page_settings, id: 'frontpagesettings')
 	span(:site_administration, xpath: "//span[text()='Site administration']")
 	link(:login, link: "Log in")
+	link(:responsive_navbar, class: 'btn btn-navbar')
 
 	def admin?
 		front_page_settings_element.exists? && site_administration_element.exists?
 	end
 
 	def go_to_login
-		self.login
+		if responsive_navbar_exists?
+			responsive_navbar
+		end
+		
+		login
 		LoginPage.new(@browser)
+	end
+
+
+	def responsive_navbar_exists?
+		responsive_navbar_element.exists?
 	end
 
 end
