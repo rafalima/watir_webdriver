@@ -9,7 +9,7 @@
     </ul>
   </li>
   <li>Instalar o <a target="_BLANK" href="http://bundler.io/">bundler</a></li>
-  <li>Montar estrutura de arquivos igual ao arquivo <a target="_BLANK" href="page_object_tree.txt">page_object_tree.txt</a> </li>
+  <li>Montar estrutura de arquivos igual ao arquivo <a target="_BLANK" href="page_object_tree.txt">page_object_tree.txt</a> ou usar o <a href="https://github.com/cheezy/testgen">testgen</a> </li>
   <li>Executar "bundle install" no root do projeto para instalar todas as dependências definidas no Gemfile</li>
   <li>Executar "bundle exec cucumber" para rodar todos os testes que estão na pastar "feature"</li>
 </ol>
