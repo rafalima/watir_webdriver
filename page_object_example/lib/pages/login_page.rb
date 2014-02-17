@@ -29,9 +29,9 @@ class LoginPage
 
 	private
 
-	def login_as(username, password)
-		self.username = username
-		self.password = password
+	def login_as(user, pass)
+		self.username = user
+		self.password = pass
 		submit
 	end
 
