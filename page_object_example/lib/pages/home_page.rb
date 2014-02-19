@@ -13,7 +13,7 @@ class HomePage
 	end
 
 	def go_to_login
-		if responsive_navbar_exists?
+		if responsive_navbar_visible?
 			responsive_navbar
 		end
 		
