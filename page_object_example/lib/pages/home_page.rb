@@ -22,8 +22,8 @@ class HomePage
 	end
 
 
-	def responsive_navbar_exists?
-		responsive_navbar_element.exists?
+	def responsive_navbar_visible?
+		responsive_navbar_element.visible?
 	end
 
 end
