@@ -30,8 +30,8 @@ class LoginPage
 	private
 
 	def login_as(user, pass)
-		self.username = user
-		self.password = pass
+		username_element.when_present.value = user
+		password_element.when_present.value = pass
 		submit
 	end
 
