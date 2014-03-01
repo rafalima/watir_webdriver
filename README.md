@@ -1,6 +1,6 @@
 <h1>Slides</h1>
 
-<a href="http://www.slideshare.net/rafalima07/apresentao-de-ruby-com-watir-webdriver">Link para os slides</a>
+<a target="_BLANK" href="http://www.slideshare.net/rafalima07/apresentao-de-ruby-com-watir-webdriver">Link para os slides</a>
 
 <h1>Instalação do zero</h1>
 
