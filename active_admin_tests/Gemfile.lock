@@ -17,6 +17,8 @@ GEM
     faker (1.3.0)
       i18n (~> 0.5)
     ffi (1.9.3)
+    fig_newton (0.10)
+      yml_reader (>= 0.3)
     gherkin (2.12.2)
       multi_json (~> 1.3)
     i18n (0.6.9)
@@ -53,6 +55,7 @@ PLATFORMS
 
 DEPENDENCIES
   cucumber
+  fig_newton
   page-object
   require_all
   rspec (= 2.14.1)
