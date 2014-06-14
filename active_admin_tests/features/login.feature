@@ -7,6 +7,13 @@ Funcionalidade: Registro de usuário e login
 
   Cenário: Registro de usuário
     Quando eu registro o seguinte usuário:
-      |usuario| email|senha|
-      |rafael24|rafalima2@gmail.com|1234|
+      | usuario  | email               | senha |
+      | rafael24 | rafalima2@gmail.com | 1234  |
     Então vejo a seguinte mensagem: "Thank you for signing up! You are now logged in."
+
+
+  Cenário: Logar com um usuário já cadatrar
+    Quando eu logar com um usuário:
+      |rafalima07@gmail.com|
+      |password|
+    Então vejo a seguinte mensagem: "Welcome rafael!"

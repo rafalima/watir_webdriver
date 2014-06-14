@@ -4,6 +4,7 @@ class HomePage
   page_url FigNewton.base_url
 
   link(:sign_up_link, link:"Sign up")
+  link(:login_link, link:"Log in")
 
   def sign_up
     sign_up_link_element.when_present.click
@@ -16,6 +17,12 @@ class HomePage
       text.include? message
     end
     true
+  end
+
+  def log_in
+    login_link_element.when_present.click
+    
+
   end
 
 end
