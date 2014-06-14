@@ -7,6 +7,6 @@ Funcionalidade: Registro de usuário e login
 
   Cenário: Registro de usuário
     Quando eu registro o seguinte usuário:
-      |rafael              |
-      |rafalima07@gmail.com|
+      |usuario| email|senha|
+      |rafael24|rafalima2@gmail.com|1234|
     Então vejo a seguinte mensagem: "Thank you for signing up! You are now logged in."

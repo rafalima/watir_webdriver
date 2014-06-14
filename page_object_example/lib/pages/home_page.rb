@@ -16,7 +16,7 @@ class HomePage
 		if responsive_navbar_visible?
 			responsive_navbar
 		end
-		
+
 		login
 		LoginPage.new(@browser)
 	end
