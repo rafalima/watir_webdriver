@@ -5,6 +5,7 @@ class HomePage
 
   link(:sign_up_link, link:"Sign up")
   link(:login_link, link:"Log in")
+  div(:auth, id:'auth')
 
   def sign_up
     sign_up_link_element.when_present.click
@@ -19,10 +20,13 @@ class HomePage
     true
   end
 
-  def log_in
+  def login
     login_link_element.when_present.click
-    
+    LoginPage.new(@browser)
+  end
 
+  def user_greetings_msg_displayed?(msg)
+    auth.include?(msg)
   end
 
 end

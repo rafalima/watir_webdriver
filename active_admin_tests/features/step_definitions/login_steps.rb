@@ -16,7 +16,16 @@ Então(/^vejo a seguinte mensagem: (.+)$/) do |mensagem|
 end
 
 
-Quando(/^eu logar com um usuário:$/) do |tabela|
+Quando(/^eu logar com os dados:$/) do |tabela|
   dados = tabela.raw
-  puts dados
+  visit HomePage do |home_page|
+    login_page = home_page.login
+    dados.inject { |user,senha| login_page.do_login(user[0],senha[0]) }
+  end
+end
+
+Então(/^vejo a mensagem de boas vindas (.+)$/) do |msg|
+  on HomePage do |page|
+    page.user_greetings_msg_displayed?(msg).should be_true
+  end
 end

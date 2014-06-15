@@ -13,7 +13,7 @@ Funcionalidade: Registro de usuário e login
 
 
   Cenário: Logar com um usuário já cadatrar
-    Quando eu logar com um usuário:
-      |rafalima07@gmail.com|
-      |password|
-    Então vejo a seguinte mensagem: "Welcome rafael!"
+    Quando eu logar com os dados:
+      | rafalima07@gmail.com |
+      | 1234                 |
+    Então vejo a mensagem de boas vindas Welcome rafael!
