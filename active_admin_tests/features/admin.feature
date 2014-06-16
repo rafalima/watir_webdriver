@@ -8,7 +8,7 @@ Funcionalidade: Área de administração do sistema
 
   Cenário: Criar Produto
     Quando navego para a página de produtos
-    Quando crio o produto:
+    E crio o produto:
       | Titulo    | Dark Side of the moon |
       | Descricao | Album do Pink Floyd   |
       | Preco     | 123                   |
