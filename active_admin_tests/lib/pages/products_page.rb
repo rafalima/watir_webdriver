@@ -31,15 +31,12 @@ class ProductsPage
   end
 
   def product_details(dados)
-    wait_until(5) do
-      product_details_element.visible?
+    product_details_element.when_visible do
+      product_details_element.text.include?(dados["Titulo"]) &&
+      product_details_element.text.include?(dados["Descricao"]) &&
+      product_details_element.text.include?(dados["Preco"]) &&
+      product_details_element.text.include?(dados["Imagem"])
     end
-
-    product_details_element.text.include?(dados["Titulo"]) &&
-    product_details_element.text.include?(dados["Descricao"]) &&
-    product_details_element.text.include?(dados["Preco"]) &&
-    product_details_element.text.include?(dados["Imagem"])
-
   end
 
 

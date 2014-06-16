@@ -9,7 +9,7 @@ Quando(/^eu registro o seguinte usuário:$/) do |tabela|
   end
 end
 
-Então(/^vejo a seguinte mensagem: (.+)$/) do |mensagem|
+Então(/^vejo a seguinte mensagem: "(.+)"$/) do |mensagem|
   on HomePage do |page|
     page.successful_signup_message_displayed?(mensagem).should be_true
   end
