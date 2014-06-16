@@ -7,8 +7,11 @@ Funcionalidade: Área de administração do sistema
 
 
   Cenário: Criar Produto
-    Dado que esteja na área de adminstração
+    Quando navego para a página de produtos
     Quando crio o produto:
-      | usuario  | email               | senha |
-      | rafael24 | rafalima2@gmail.com | 1234  |
+      | Titulo    | Dark Side of the moon |
+      | Descricao | Album do Pink Floyd   |
+      | Preco     | 123                   |
+      | Imagem    | darkside.jpg          |
     Então vejo a mensagem: "Product was successfully created."
+    E os dados do novo produto são listados corretamente

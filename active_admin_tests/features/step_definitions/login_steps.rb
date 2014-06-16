@@ -24,7 +24,7 @@ Quando(/^eu logar com os dados:$/) do |tabela|
   end
 end
 
-Então(/^vejo a mensagem de boas vindas (.+)$/) do |msg|
+Então(/^vejo a mensagem de boas vindas "(.+)"$/) do |msg|
   on HomePage do |page|
     page.user_greetings_msg_displayed?(msg).should be_true
   end

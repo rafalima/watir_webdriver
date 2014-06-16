@@ -26,7 +26,7 @@ class HomePage
   end
 
   def user_greetings_msg_displayed?(msg)
-    auth_element.text.include?(msg)
+    auth_element.when_present.text.include?(msg)
   end
 
 end

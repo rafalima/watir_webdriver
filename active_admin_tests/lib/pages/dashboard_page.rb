@@ -3,22 +3,13 @@ class DashboardPage
 
   page_url "#{FigNewton.base_url}/admin"
 
-  list_item(:dashboard, id:'dashboard')
-  list_item(:products, id:'products')
+  link(:dashboard, link:'Dashboard')
+  link(:products, link:'Products')
   div(:flash_notice, class: 'flash_notice')
 
   def goto_products
-    goto(products)
+    products_element.when_present.click
     ProductsPage.new(@browser)
   end
-
-
-
-  private
-
-  def goto(option)
-    option_element.when_present.click
-  end
-
 
 end

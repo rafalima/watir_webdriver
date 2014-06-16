@@ -16,4 +16,4 @@ Funcionalidade: Registro de usuário e login
     Quando eu logar com os dados:
       | rafalima07@gmail.com |
       | 1234                 |
-    Então vejo a mensagem de boas vindas Welcome rafael!
+    Então vejo a mensagem de boas vindas "Welcome rafael!"
