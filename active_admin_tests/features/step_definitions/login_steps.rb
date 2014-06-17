@@ -1,10 +1,8 @@
 Quando(/^eu registro o seguinte usuário:$/) do |tabela|
-  dados = tabela.hashes
+  dados = tabela.hashes.pop
   visit HomePage do |home_page|
     sign_up_page = home_page.sign_up
-    dados.each do |dado|
-      sign_up_page.do_sign_up(dado["usuario"],dado["email"],dado["senha"])
-    end
+    sign_up_page.do_sign_up(dados["usuario"],dados["email"],dados["senha"])
 
   end
 end
@@ -17,10 +15,10 @@ end
 
 
 Quando(/^eu logar com os dados:$/) do |tabela|
-  dados = tabela.raw
+  dados = tabela.raw.flatten
   visit HomePage do |home_page|
     login_page = home_page.login
-    dados.inject { |user,senha| login_page.do_login(user[0],senha[0]) }
+    login_page.do_login(dados[0],dados[1])
   end
 end
 

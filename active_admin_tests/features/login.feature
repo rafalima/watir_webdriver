@@ -12,7 +12,7 @@ Funcionalidade: Registro de usuário e login
     Então vejo a seguinte mensagem: "Thank you for signing up! You are now logged in."
 
 
-  Cenário: Logar com um usuário já cadatrar
+  Cenário: Logar com um usuário já cadastrado
     Quando eu logar com os dados:
       | rafalima07@gmail.com |
       | 1234                 |
