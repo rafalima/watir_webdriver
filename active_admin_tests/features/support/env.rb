@@ -5,7 +5,7 @@ require 'page-object'
 require 'require_all'
 require 'fig_newton'
 
-FigNewton.yml_directory = 'environments'
+FigNewton.yml_directory = 'config/environments'
 FigNewton.load('local.yml')
 
 require_all 'lib'

@@ -10,11 +10,11 @@ class SignUpPage
   text_field(:password_confirmation, id:'user_password_confirmation')
   button(:submit, id:'user_submit')
 
-  def do_sign_up(username, email, password)
-    self.username_element.when_present.value = username
-    self.email_element.when_present.value = email
-    self.password_element.when_present.value = password
-    self.password_confirmation_element.when_present.value = password
+  def do_sign_up(user)
+    self.username_element.when_present.value = user.username
+    self.email_element.when_present.value = user.email
+    self.password_element.when_present.value = user.password
+    self.password_confirmation_element.when_present.value = user.password
     submit
   end
 end

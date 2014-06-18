@@ -8,13 +8,10 @@ class LoginPage
   button(:submit_btn, name:'commit')
 
 
-  def do_login(login,password)
-    login_element.when_present.value = login
-    password_element.when_present.value = password
+  def do_login(user)
+    login_element.when_present.value = user.username
+    password_element.when_present.value = user.password
     submit_btn
   end
-
-
-
 
 end
