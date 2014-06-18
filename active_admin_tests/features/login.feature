@@ -8,12 +8,12 @@ Funcionalidade: Registro de usuário e login
   Cenário: Registro de usuário
     Quando eu registro o seguinte usuário:
       | usuario  | email               | senha |
-      | rafael   | rafalima4@gmail.com | 1234  |
+      | rafael4  | rafalima4@gmail.com | 1234  |
     Então vejo a seguinte mensagem: "Thank you for signing up! You are now logged in."
 
 
   Cenário: Logar com um usuário já cadastrado
     Quando eu logar com os dados:
-      | rafalima4@gmail.com |
+      | rafalima07@gmail.com |
       | 1234                |
     Então vejo a mensagem de boas vindas "Welcome rafael!"

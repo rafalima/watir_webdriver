@@ -18,11 +18,11 @@ class ProductsPage
     ProductsPage.new(@browser)
   end
 
-  def create_product(dados)
-    title_element.when_present.value = dados["Titulo"]
-    description_element.when_present.value = dados["Descricao"]
-    price_element.when_present.value = dados["Preco"]
-    image_element.when_present.value = dados["Imagem"]
+  def create_product(product)
+    title_element.when_present.value = product.title
+    description_element.when_present.value = product.description
+    price_element.when_present.value = product.price
+    image_element.when_present.value = product.image
     submit
   end
 
@@ -30,12 +30,12 @@ class ProductsPage
     flash_notice_element.when_present.text
   end
 
-  def product_details(dados)
+  def product_details(product)
     product_details_element.when_visible do
-      product_details_element.text.include?(dados["Titulo"]) &&
-      product_details_element.text.include?(dados["Descricao"]) &&
-      product_details_element.text.include?(dados["Preco"]) &&
-      product_details_element.text.include?(dados["Imagem"])
+      product_details_element.text.include?(product.title) &&
+      product_details_element.text.include?(product.description) &&
+      product_details_element.text.include?(product.price) &&
+      product_details_element.text.include?(product.image)
     end
   end
 
