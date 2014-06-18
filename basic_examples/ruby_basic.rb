@@ -27,14 +27,11 @@ puts nome
 
 #Symbol vs String
 
-10.times do |x| 
+10.times do
 	puts "String".object_id
 end
 
 
-10.times do |x| 
+10.times do
 	puts :string.object_id
 end
-
-
-
