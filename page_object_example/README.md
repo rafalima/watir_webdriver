@@ -8,7 +8,7 @@
     </ul>
   </li>
   <li>Instalar o <a target="_BLANK" href="http://bundler.io/">bundler</a></li>
-  <li><a href="https://github.com/rafalima/demo.activeadmin.info/blob/master/README.md">Aplicação demo</a> deve estar rodando</li>
+  <li><a href="http://demo.moodle.net/">A aplicação demo do moodle</a> deve estar rodando</li>
 </ol>
 
 <h1>Executando os testes</h1>
