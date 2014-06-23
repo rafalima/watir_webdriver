@@ -17,3 +17,9 @@ Funcionalidade: Registro de usuário e login
       | rafalima07@gmail.com |
       | 1234                |
     Então vejo a mensagem de boas vindas "Welcome rafael!"
+
+Cenário: Registro falho de usuário
+  Quando eu registro o seguinte usuário:
+    | usuario  | email               | senha |
+    | rafael4  | rafalima4@          | 1234  |
+  Então vejo a seguinte mensagem: "Email is invalid"
