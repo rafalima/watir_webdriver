@@ -1,11 +1,11 @@
 <h1>Conteúdo desse repo</h1>
 
 <ul>
-  <li>Slides para a apresentação sobre Watir - <a target="_BLANK" href="http://www.slideshare.net/rafalima07/apresentao-de-ruby-com-watir-webdriver">slides</a> </li>
-  <li>basic_examples - exemplos básicos sobre ruby</li>
-  <li>page_object_example - exemplo sobre ruby e watir (testando a página demo do moodle)</li>
-  <li>active_admin_tests - exemplo sobre ruby e watir (testando um sistema que pode ser baixado localmente)</li>
-  <li>page_object_tree.txt - Estrutura básicas de arquivos para ter um projeto watir funcionando. É possível ter a mesma estrutura usando uma gem chamada <a href="https://github.com/cheezy/testgen">testgen</a></li>
+  <li><strong>Slides para a apresentação sobre Watir</strong> - <a target="_BLANK" href="http://www.slideshare.net/rafalima07/apresentao-de-ruby-com-watir-webdriver">slides</a> </li>
+  <li><strong>basic_examples</strong> - exemplos básicos sobre ruby</li>
+  <li><strong>page_object_example</strong> - exemplo sobre ruby e watir (testando a página demo do moodle)</li>
+  <li><strong>active_admin_tests</strong> - exemplo sobre ruby e watir (testando um sistema que pode ser baixado localmente)</li>
+  <li><strong>page_object_tree.txt</strong> - Estrutura básicas de arquivos para ter um projeto watir funcionando. É possível ter a mesma estrutura usando uma gem chamada <a href="https://github.com/cheezy/testgen">testgen</a></li>
 </ul>
 
 
