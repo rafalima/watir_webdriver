@@ -1,8 +1,15 @@
-<h1>Slides</h1>
+<h1>Conteúdo desse repo</h1>
 
-<a target="_BLANK" href="http://www.slideshare.net/rafalima07/apresentao-de-ruby-com-watir-webdriver">Link para os slides</a>
+<ul>
+  <li>Slides para a apresentação sobre Watir - <a target="_BLANK" href="http://www.slideshare.net/rafalima07/apresentao-de-ruby-com-watir-webdriver">slides</a> </li>
+  <li>basic_examples - exemplos básicos sobre ruby</li>
+  <li>page_object_example - exemplo sobre ruby e watir (testando a página demo do moodle)</li>
+  <li>active_admin_tests - exemplo sobre ruby e watir (testando um sistema que pode ser baixado localmente)</li>
+  <li>page_object_tree.txt - Estrutura básicas de arquivos para ter um projeto watir funcionando. É possível ter a mesma estrutura usando uma gem chamada <a href="https://github.com/cheezy/testgen">testgen</a></li>
+</ul>
 
-<h1>Instalação do zero</h1>
+
+<h1>Pré-requisitos para rodar os examplos</h1>
 
 <ol>
   <li>Instalar <a target="_BLANK" href="https://github.com/sstephenson/rbenv">Rbenv</a> ou <a target="_BLANK" href="http://rvm.io/rvm/install">RVM</a></li>
@@ -13,7 +20,4 @@
     </ul>
   </li>
   <li>Instalar o <a target="_BLANK" href="http://bundler.io/">bundler</a></li>
-  <li>Montar estrutura de arquivos igual ao arquivo <a target="_BLANK" href="page_object_tree.txt">page_object_tree.txt</a> ou usar o <a href="https://github.com/cheezy/testgen">testgen</a> </li>
-  <li>Executar "bundle install" no root do projeto para instalar todas as dependências definidas no Gemfile</li>
-  <li>Executar "rake feature" para rodar todos os testes que estão na pasta "feature"</li>
 </ol>
